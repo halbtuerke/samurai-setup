@@ -136,7 +136,9 @@ Install ruby, git, tree and ImageMagick via MacPorts.
   <pre><code>sudo gem install mysql -- --with-mysql-config=/opt/local/lib/mysql5/bin/mysql_config</code></pre>
 	
 
-## Install and setup ImageMagic and rmagick
+## Install and setup ImageMagick and rmagick
+
+ImageMagick is already installed via MacPorts if you've followed me so far.
 
 	sudo gem install rmagick
 
