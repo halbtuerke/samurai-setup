@@ -50,8 +50,7 @@ A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-an
 	
 	# Settings for Ruby installed via MacPorts
 	TM_RUBY="/opt/local/bin/ruby"
-	RUBYLIB=/opt/local/lib/ruby/gems/gems/sources-0.0.1/lib
-	export RUBYLIB
+
 	
 	# alias Rails script
 	alias ss="./script/server"
