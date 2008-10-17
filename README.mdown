@@ -159,7 +159,7 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 7. Use IMAP. Gmail or Mailtrust is recommended.
 8. Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. (This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
 9. Use [SpamSieve](http://c-command.com/spamsieve/) for fighting spam. Apple Mail's Junk Filter is not usable. $30.
-10. Use Mail-Acton for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
+10. Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
 	
 # Check gem environment
 
