@@ -1,0 +1,197 @@
+# Setting up Ruby on Rails Development Environment on Mac OS X Leopard
+
+This document is written [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
+
+## Assumptions
+
+* Mac OS X 10.5 "Leopard"
+* Basic Unix Skills
+* [Discuss Mac OS X specific Unix issues](http://forums.macosxhints.com/showthread.php?t=40648)
+* [This book may be good for Unix beginners](http://safari.oreilly.com/0596009151)
+* Familiarity with these commands (e.g., `cd`, `ls`, `sudo`, `mv`, `ln`, `cp`, `which` and `whereis`)
+* Reading ability. MacPorts, TextMate and Ruby do have a good documentation.
+
+## Overview
+
+We are installing Mac OS X and establish Ruby on Rails development environment. We use MacPorts for installing Ruby. Ruby that comes with Leopard is not the latest anymore. We briefly discuss email setup. We are not installing PHP or Apache since we are using built-in PHP and Apache. You can use `vi`, `emacs` or any other text editor you are familiar with instead of `mate`.
+
+## Steps
+
+0. Establish a wireless connection before installation. Using a wireless connection, you can avoid time to set up a wireless connection first. Take a note of the name of network and password.
+1. Install Mac OS X from the Installer DVD.
+2. Connect to the internet.
+2. Update the OS (e.g., minor updates and security updates) using Software Update. This will require a system restart a few times.
+3. Install Developer Tools (Xcode) from [ADC website][ADC] (1GB Download)
+4. Install iPhone SDK. Download the package from [ADC][].
+
+[ADC]: http://www.apple.com/developer "Apple Developer Connection"
+
+5. Download and install [MacPorts][]. Read [the documentation][port_doc] if you encounter any problems. The documentation is well written.
+
+[MacPorts]: http://www.macports.org/ "MacPorts"
+[port_doc]: http://guide.macports.org/ "MacPorts Guide"
+
+6. Download [TextMate][] and install `mate` command. (TODO: More detailed instruction is required for the `mate` command.)
+
+![Image](images/mate.jpg "Enhanced Terminal Usage")
+
+[TextMate]: http://macromates.com/ "TextMate"
+7. Write a `.bach_login` file.
+
+A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-and-pasting code below, hit &#x2318;-S to save the file. (The file whose name starts with `.`(dot) are invisible from Finder. Use `ls -a` to see the files.) The sample file include some code you don't need. It's just an example.
+
+	export PATH="/opt/local/bin/:/usr/local/bin:/opt/local/lib/mysql5/bin:/usr/local/sbin:/usr/local/mysql/bin:/Developer/Tools:$PATH" 
+	export EDITOR='mate -w'
+	export LANG="UTF-8"
+	export LC_ALL=en_US.UTF-8
+	export LC_CTYPE=en_US.UTF-8
+	
+	# Settings for Ruby installed via MacPorts
+	TM_RUBY="/opt/local/bin/ruby"
+	RUBYLIB=/opt/local/lib/ruby/gems/gems/sources-0.0.1/lib
+	export RUBYLIB
+	
+	# alias Rails script
+	alias ss="./script/server"
+	alias sc="./script/console"
+	alias sg="./script/generate"
+	alias sp="./script/plugin"
+	alias atest="autotest"
+	alias rakedbm="rake db:migrate"
+	alias rakedbr="rake db:reset"
+	
+	# SVN # http://dotfiles.org/~jnunemaker/.bash_profile
+	alias svnclear='find . -name .svn -print0 | xargs -0 rm -rf'
+	alias svnaddall='svn status | grep "^\?" | awk "{print \$2}" | xargs svn add'
+
+	# GIT based on PeepCode episode by topfunky
+	alias gst='git status'
+	alias gl='git pull'
+	alias gp='git push'
+	alias gd='git diff | mate'
+	alias gc='git commit -v'
+	alias gca='git commit -v -a'
+	alias gb='git branch'
+	alias gba='git branch -a'
+
+
+7. Check `which port` if MacPorts is recognized or not. (Troubleshoot: If you get "port: command not found", [Read 2.4 of the MacPorts guide carefully.](http://guide.macports.org/#installing.shell "2.4 MacPorts and the Shell"))
+
+## Install commands via MacPorts
+
+Install ruby, git, tree and ImageMagick via MacPorts.
+
+	sudo gem install ruby
+	sudo gem install rb-rubygems
+	sudo gem install git-core +svn
+	sudo gem install tree
+	sudo gem install ImageMagick
+
+
+**Note**: You may be encountering any errors. In that case, use `selfupdate` and `sync` commands, and run `clean` commands for each port you failed to install as the following. And try installing them once again. You will be repeating the same error until you run `clean -all` for the failed ports. [Installation of a command, which requires `sqlite3` is buggy.][bug] At this time I'm assuming everyone needs to encounter the bug. Use `port clean -all sqlite3`(Ask MacPorts list if any problem occurs.)
+
+[bug]: http://trac.macports.org/ticket/14845
+	
+	sudo port selfupdate -D
+	sudo port sync
+	sudo port clean -all sqlite3
+	sudo port clean -all git-core
+	sudo port clean -all ImageMagick
+
+10. Install applications of your choice. (e.g., Firefox, VMWare Fusion, Skype, Adium, SuperDuper, NetNewsWire, Knox, Colloquy, 1Password.)
+11. Run MobileMe Sync
+11. Add a GitHub as a resource for gems. `gem sources -a http://gems.github.com`
+12. Instal gems `sudo gem install [name_of_gem]`.
+	* rails
+	* capistrano
+	* fastercsv
+	* hpricot
+	* git
+	* github
+	* mocha
+	* ruby-debug
+	* rspec
+	* rspec-rails
+	* termiosl
+	* sqlite3-ruby
+	* will\_paginate
+	* ZenTest
+	* rocv
+	* mongrel
+	* cheat
+	* rmagick
+	* mechanize
+	* haml
+	
+## Set up MySQL
+
+* Install MySQL5 using MacPorts and set it up. Follow the instruction of [Installing MySQL on Mac OS X 10.5][mysql].
+
+[mysql]: http://www.martinoflynn.com/blog/2008/08/13/installing-mysql-on-mac-os-x-105/ "Installing MySQL on Mac OS X 10.5"
+	
+* Install MySQL gem to make MySQL work better with ruby.
+
+
+  <pre><code>sudo gem install mysql -- --with-mysql-config=/opt/local/lib/mysql5/bin/mysql_config</code></pre>
+	
+
+## Install and setup ImageMagic and rmagick
+
+	sudo gem install rmagick
+
+# Secure Email
+
+1. Use Knox and make a new vault called "Mail" (Don't let your login keychain to remember the password. TODO: Image may be necessary.)
+2. Mount the Mail
+3. Move ~/Library/Mail to ~/Desktop for now
+4. Make a [symlink][]
+[symlink]: http://en.wikipedia.org/wiki/Symbolic_link "Symbolic Linnk"
+
+	ln -s /Volumes/Mail ~/Library/Mail
+
+5. [Get a free Thawte certificate](http://www.thawte.com/secure-email/personal-email-certificates/).
+6. Use SSL. If your mail account doesn't support SSL, don't use it. Use https:// instead of http://
+7. Use IMAP. Gmail or Mailtrust is recommended.
+8. Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. (This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
+9. Use [SpamSieve](http://c-command.com/spamsieve/) for fighting spam. Apple Mail's Junk Filter is not usable.
+	
+# Check gem environment
+
+	$ gem environment
+	RubyGems Environment:
+	  - RUBYGEMS VERSION: 1.2.0
+	  - RUBY VERSION: 1.8.7 (2008-08-11 patchlevel 72) [i686-darwin9]
+	  - INSTALLATION DIRECTORY: /opt/local/lib/ruby/gems/1.8
+	  - RUBY EXECUTABLE: /opt/local/bin/ruby
+	  - EXECUTABLE DIRECTORY: /opt/local/bin
+	  - RUBYGEMS PLATFORMS:
+	    - ruby
+	    - x86-darwin-9
+	  - GEM PATHS:
+	     - /opt/local/lib/ruby/gems/1.8
+	  - GEM CONFIGURATION:
+	     - :update_sources => true
+	     - :verbose => true
+	     - :benchmark => false
+	     - :backtrace => false
+	     - :bulk_threshold => 1000
+	  - REMOTE SOURCES:
+	     - http://gems.rubyforge.org/
+# Gem tips
+
+# MacPorts tips
+
+ Read Manual and FAQ
+
+# Setup TextMate
+
+
+# Suggested Readings
+
+
+TODO: how to troubleshoot gem
+TODO: how to troubleshoot port
+TODO: how to configure TextMate (for TextMate beginners)
+TODO: Cool enhancements for TextMate such as [RubyAmp](http://code.leadmediapartners.com/) and [ProjectPlus](http://blog.macromates.com/2008/projectplus/)
+TODO: autotest
+TODO: RSpec bundle
