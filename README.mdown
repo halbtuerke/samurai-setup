@@ -2,7 +2,7 @@
 
 Please send me your feedback!
 
-This document is written [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
+This document is written in [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
 
 ## Assumptions
 
@@ -23,7 +23,7 @@ We are installing Mac OS X and establish Ruby on Rails development environment. 
 1. Install Mac OS X from the Installer DVD.
 2. Connect to the internet.
 2. Update the OS (e.g., minor updates and security updates) using Software Update. This will require a system restart a few times.
-3. Install Developer Tools (Xcode) from [ADC website][ADC] (1GB Download)
+3. Install Developer Tools (Xcode) from [ADC website][ADC]. (1GB Download)
 4. Install iPhone SDK. Download the package from [ADC][].
 
 [ADC]: http://www.apple.com/developer "Apple Developer Connection"
