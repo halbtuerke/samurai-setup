@@ -192,7 +192,15 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 # Setup TextMate
 
 * TextMate tutorial. <http://projects.serenity.de/textmate/tutorials/>
-* <http://manual.macromates.com/en/>
+* TextMate official Manual <http://manual.macromates.com/en/>
+* Subscribe to TextMate blog <http://blog.macromates.com/>
+* Use a TextMate mailing list or IRC for help.
+
+# Moving Windows without Mouse
+
+* Use [MarcuryMover](http://www.heliumfoot.com/). $24.
+
+# TextExpander
 
 # Suggested Readings
 
