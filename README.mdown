@@ -194,12 +194,16 @@ ImageMagick is already installed via MacPorts if you've followed me so far.
 # Suggested Readings
 
 
-TODO: how to troubleshoot gem
-TODO: how to troubleshoot port
-TODO: how to configure TextMate (for TextMate beginners)
-TODO: Cool enhancements for TextMate such as [RubyAmp](http://code.leadmediapartners.com/) and [ProjectPlus](http://blog.macromates.com/2008/projectplus/)
-TODO: autotest
-TODO: RSpec bundle
+* TODO: how to troubleshoot gem
+* TODO: how to troubleshoot port
+* TODO: how to configure TextMate (for TextMate beginners)
+* TODO: Cool enhancements for TextMate such as [RubyAmp](http://code.leadmediapartners.com/) and [ProjectPlus](http://blog.macromates.com/2008/projectplus/)
+* TODO: autotest
+* TODO: RSpec bundle
+* TODO: FastScripts
+* TODO: Other apps like Firefox
+* TODO: menubar apps
+
 
 # Further directions
 
