@@ -35,7 +35,7 @@ We are installing Mac OS X and establish Ruby on Rails development environment. 
 
 6. Download [TextMate][] and install `mate` command. (TODO: More detailed instruction is required for the `mate` command.)
 
-![Enhanced Terminal Usage](http://github.com/samuraicoder/samurai-setup/tree/master/images/mate.jpg)
+![Enhanced Terminal Usage](http://github.com/samuraicoder/samurai-setup/tree/master%2Fimages%2Fmate.jpg?raw=true)
 
 [TextMate]: http://macromates.com/ "TextMate"
 7. Write a `.bach_login` file.
