@@ -1,5 +1,7 @@
 # Setting up Ruby on Rails Development Environment on Mac OS X Leopard
 
+Please send me your feedback!
+
 This document is written [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
 
 ## Assumptions
@@ -181,10 +183,12 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 
 # MacPorts tips
 
- Read Manual and FAQ
+* <http://guide.macports.org/>
 
 # Setup TextMate
 
+* TextMate tutorial. <http://projects.serenity.de/textmate/tutorials/>
+* <http://manual.macromates.com/en/>
 
 # Suggested Readings
 
@@ -195,3 +199,10 @@ TODO: how to configure TextMate (for TextMate beginners)
 TODO: Cool enhancements for TextMate such as [RubyAmp](http://code.leadmediapartners.com/) and [ProjectPlus](http://blog.macromates.com/2008/projectplus/)
 TODO: autotest
 TODO: RSpec bundle
+
+# Further directions
+
+* Learn svn
+* Learn git-svn
+* Learn git
+* Learn how to use GitHub
