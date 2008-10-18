@@ -2,16 +2,16 @@
 
 Please send me your feedback!
 
-This document is written in [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
+This document is written in [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). You can use [dingus](http://daringfireball.net/projects/markdown/dingus) for conversion. TextMate also supports "Markdown to XHTML". See Markdown bundle for details.
 
 ## Assumptions
 
-* Mac OS X 10.5 "Leopard"
-* Basic Unix Skills
+* Mac OS X 10.5 "Leopard" (tested only on Intel-base Macs. Feedback is encouraged from PowerPC users.)
+* Familiarity with basic Unix commands (e.g., `cd`, `ls`, `sudo`, `mv`, `ln`, `cp`, `which` and `whereis`)
 * [Discuss Mac OS X specific Unix issues](http://forums.macosxhints.com/showthread.php?t=40648)
 * [This book may be good for Unix beginners](http://safari.oreilly.com/0596009151)
-* Familiarity with these commands (e.g., `cd`, `ls`, `sudo`, `mv`, `ln`, `cp`, `which` and `whereis`)
 * Reading ability. MacPorts, TextMate and Ruby do have a good documentation.
+* The primary author of this document (samuraicoder) doesn't know about Windows OS very well.
 
 ## Overview
 
@@ -241,6 +241,7 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 * TODO: menubar apps
 * TODO: installation of "Edit in TextMate"
 * TODO: Email part can be moved to another file.
+* TODO: A brief explanation for what ImageMagick is.
 
 
 # Further directions
