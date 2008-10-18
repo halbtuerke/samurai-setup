@@ -167,10 +167,12 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 1. Use [Knox](http://www.knoxformac.com/) and make a new vault called "Mail" (Don't let your login keychain to remember the password. TODO: Some images or screencasts may be necessary.) Knox is available for &euro;25.
 2. Mount the Mail vault.
 3. Move ~/Library/Mail to ~/Desktop for now
-4. Make a [symlink][]
+4. Make a [symbolic link][simlink].
 [symlink]: http://en.wikipedia.org/wiki/Symbolic_link "Symbolic Linnk"
 
-	ln -s /Volumes/Mail ~/Library/Mail
+
+	<pre><code>ln -s /Volumes/Mail ~/Library/Mail</code></pre>
+
 
 5. [Get a free Thawte certificate](http://www.thawte.com/secure-email/personal-email-certificates/).
 6. Use SSL. If your mail account doesn't support SSL, don't use it. Use https:// instead of http://
