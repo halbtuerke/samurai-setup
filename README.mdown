@@ -33,9 +33,27 @@ We are installing Mac OS X and establish Ruby on Rails development environment. 
 [MacPorts]: http://www.macports.org/ "MacPorts"
 [port_doc]: http://guide.macports.org/ "MacPorts Guide"
 
-6. Download [TextMate][] and install `mate` command. (TODO: More detailed instruction is required for the `mate` command.)
+6. Download [TextMate][] and install the `mate` command so that you can invoke TextMate from within the terminal.
 
 ![Enhanced Terminal Usage](http://github.com/samuraicoder/samurai-setup/tree/master%2Fimages%2Fmate.jpg?raw=true)
+
+After you've installed `mate` you can open files and folders with TextMate from within your terminal.
+
+### Opening a file ###
+
+`mate FILE`
+
+### Opening several files ###
+
+`mate FILE1 FILE2`
+
+### Opening current folder ###
+
+`mate .`
+
+### Opening specific folder ###
+
+`mate FOLDER/`
 
 [TextMate]: http://macromates.com/ "TextMate"
 7. Write a `.bash_login` file.
