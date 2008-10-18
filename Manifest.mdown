@@ -1,0 +1,15 @@
+# Scope of this project
+
+Basically a collection of good readings for would-be programmers.
+
+I don't discuss every point in great details. I just get you started.
+
+* Setting up Ruby on Rails environment on Mac
+* How to secure your emails.
+* Securing Mac.
+* Securing Notebook.
+* How to backup.
+* How to write emails.
+* How to communicate with collegues (face to face, email, bug tracker, agile practice)
+* How to learn Ruby and Ruby on Rails.
+* How to get a job!
