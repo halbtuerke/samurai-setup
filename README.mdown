@@ -214,6 +214,7 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 * TODO: FastScripts
 * TODO: Other apps like Firefox
 * TODO: menubar apps
+* TODO: installation of "Edit in TextMate"
 
 
 # Further directions
