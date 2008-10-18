@@ -23,7 +23,7 @@ We are installing Mac OS X and establish Ruby on Rails development environment. 
 1. Install Mac OS X from the Installer DVD.
 2. Connect to the internet.
 2. Update the OS (e.g., minor updates and security updates) using Software Update. This will require a system restart a few times.
-3. Install Developer Tools (Xcode) from [ADC website][ADC] (1GB Download)
+3. Install Developer Tools (Xcode) from [ADC website][ADC]. (1GB Download)
 4. Install iPhone SDK. Download the package from [ADC][].
 
 [ADC]: http://www.apple.com/developer "Apple Developer Connection"
@@ -131,7 +131,7 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 	* ruby-debug
 	* rspec
 	* rspec-rails
-	* termiosl
+	* termios
 	* sqlite3-ruby
 	* will\_paginate
 	* ZenTest
@@ -177,7 +177,7 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 7. Use IMAP. Gmail or Mailtrust is recommended.
 8. Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. (This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
 9. Use [SpamSieve](http://c-command.com/spamsieve/) for fighting spam. Apple Mail's Junk Filter is not usable. $30.
-10. Use Mail-Acton for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
+10. Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
 	
 # Check gem environment
 
@@ -210,7 +210,15 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 # Setup TextMate
 
 * TextMate tutorial. <http://projects.serenity.de/textmate/tutorials/>
-* <http://manual.macromates.com/en/>
+* TextMate official Manual <http://manual.macromates.com/en/>
+* Subscribe to TextMate blog <http://blog.macromates.com/>
+* Use a TextMate mailing list or IRC for help.
+
+# Moving Windows without Mouse
+
+* Use [MarcuryMover](http://www.heliumfoot.com/). $24.
+
+# TextExpander
 
 # Suggested Readings
 
@@ -224,6 +232,7 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 * TODO: FastScripts
 * TODO: Other apps like Firefox
 * TODO: menubar apps
+* TODO: installation of "Edit in TextMate"
 
 
 # Further directions
