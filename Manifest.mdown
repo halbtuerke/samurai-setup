@@ -10,6 +10,8 @@ I don't discuss every point in great details. I just get you started.
 * Securing Notebook.
 * How to backup.
 * How to write emails.
-* How to communicate with collegues (face to face, email, bug tracker, agile practice)
-* How to learn Ruby and Ruby on Rails.
+* How to communicate with colleges (face to face, email, bug tracker, agile practice) without much stress.
+* How to learn Ruby
+* How to learn Ruby on Rails.
+* How to deal with stress
 * How to get a job!
