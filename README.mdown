@@ -100,11 +100,11 @@ A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-an
 
 Install ruby, git, tree and ImageMagick via MacPorts.
 
-	sudo gem install ruby
-	sudo gem install rb-rubygems
-	sudo gem install git-core +svn
-	sudo gem install tree
-	sudo gem install ImageMagick
+	sudo port install ruby
+	sudo port install rb-rubygems
+	sudo port install git-core +svn
+	sudo port install tree
+	sudo port install ImageMagick
 
 
 **Note**: You may be encountering any errors. In that case, use `selfupdate` and `sync` commands, and run `clean` commands for each port you failed to install as the following. And try installing them once again. You will be repeating the same error until you run `clean -all` for the failed ports. [Installation of a command, which requires `sqlite3` is buggy.][bug] At this time I'm assuming everyone needs to encounter the bug. Use `port clean -all sqlite3`(Ask MacPorts list if any problem occurs.)
