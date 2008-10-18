@@ -120,7 +120,7 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 10. Install applications of your choice. (e.g., Firefox, VMWare Fusion, Skype, Adium, SuperDuper, NetNewsWire, Knox, Colloquy, 1Password.)
 11. Run MobileMe Sync
 11. Add a GitHub as a resource for gems. `gem sources -a http://gems.github.com`
-12. Instal gems `sudo gem install [name_of_gem]`. (Don't install MySQL gem yet!)
+12. Install gems `sudo gem install [name_of_gem]`. (Don't install MySQL gem yet!)
 	* rails
 	* capistrano
 	* fastercsv
