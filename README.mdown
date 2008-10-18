@@ -38,7 +38,7 @@ We are installing Mac OS X and establish Ruby on Rails development environment. 
 ![Enhanced Terminal Usage](http://github.com/samuraicoder/samurai-setup/tree/master%2Fimages%2Fmate.jpg?raw=true)
 
 [TextMate]: http://macromates.com/ "TextMate"
-7. Write a `.bach_login` file.
+7. Write a `.bash_login` file.
 
 A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-and-pasting code below, hit &#x2318;-S to save the file. (The file whose name starts with `.`(dot) are invisible from Finder. Use `ls -a` to see the files.) The sample file include some code you don't need. It's just an example.
 
