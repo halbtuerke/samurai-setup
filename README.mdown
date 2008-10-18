@@ -113,7 +113,7 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 	* ruby-debug
 	* rspec
 	* rspec-rails
-	* termiosl
+	* termios
 	* sqlite3-ruby
 	* will\_paginate
 	* ZenTest
