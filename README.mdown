@@ -2,7 +2,7 @@
 
 Please send me your feedback!
 
-This document is written [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
+This document is written in [Markdown](http://daringfireball.net/projects/markdown/ "Markdown: Daring Fireball"). 
 
 ## Assumptions
 
