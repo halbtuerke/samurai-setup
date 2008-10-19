@@ -19,3 +19,8 @@
 * Mention Randy Pausch's two videos.
 * Mention MailTemplate price.
 * Mention TextMate book.
+* Mention `gem help`
+* Mention `gem -v`
+* Mention `port version`
+* Mention `port help`
+* Mention `http://docs.rubygems.org/`
