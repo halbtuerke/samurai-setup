@@ -118,30 +118,43 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 	sudo port clean -all git-core
 	sudo port clean -all ImageMagick
 
-10. Install applications of your choice. (e.g., Firefox, VMWare Fusion, Skype, Adium, SuperDuper, NetNewsWire, Knox, Colloquy, 1Password.)
-11. Run MobileMe Sync
-11. Add a GitHub as a resource for gems. `gem sources -a http://gems.github.com`
-12. Install gems `sudo gem install [name_of_gem]`. (Don't install MySQL gem yet!)
-	* rails
-	* capistrano
-	* fastercsv
-	* hpricot
-	* git
-	* github
-	* mocha
-	* ruby-debug
-	* rspec
-	* rspec-rails
-	* termios
-	* sqlite3-ruby
-	* will\_paginate
-	* ZenTest
-	* rocv
-	* mongrel
-	* cheat
-	* rmagick
-	* mechanize
-	* haml
+* Install applications of your choice. (e.g., Firefox, VMWare Fusion, Skype, Adium, SuperDuper, NetNewsWire, Knox, Colloquy, 1Password.)
+* Run MobileMe Sync (if you have an account.)
+* Add a GitHub as a resource for gems. `gem sources -a http://gems.github.com`
+* Install gems `sudo gem install [name_of_gem]`. (Don't install MySQL gem yet!)
+
+You can run `sudo gem install rails`, for example.
+
+Here is a list of gems I use regularly.
+
+* rails
+* capistrano
+* fastercsv
+* hpricot
+* git
+* github
+* mocha
+* ruby-debug
+* rspec
+* rspec-rails
+* termios
+* sqlite3-ruby
+* will\_paginate
+* ZenTest
+* rocv
+* mongrel
+* cheat
+* rmagick
+* mechanize
+* haml
+
+You can install many gems at once, for example:
+
+	sudo gem install rails capistrano fastercsv git github mocha ruby-debug rspec rspec-rails termios sqlite3-ruby will_paginate ZenTest rcov mongrel cheat rmagick mechanize haml.
+	
+
+**Note**: Install `rmagick` after installing ImageMagick successfully.
+
 	
 ## Set up MySQL
 
@@ -155,36 +168,45 @@ Install ruby, git, tree and ImageMagick via MacPorts.
   <pre><code>sudo gem install mysql -- --with-mysql-config=/opt/local/lib/mysql5/bin/mysql_config</code></pre>
 	
 
-## Install and setup ImageMagick and rmagick
 
-ImageMagick is already installed via MacPorts if you've followed me so far.
-
-	sudo gem install rmagick
 
 # Secure Email
 
 Whatever you do for work, you need to spend less time on email to spend more time on development. You also need to use emails securely.
 
-1. Use [Knox](http://www.knoxformac.com/) and make a new vault called "Mail" (Don't let your login keychain to remember the password. TODO: Some images or screencasts may be necessary.) Knox is available for &euro;25.
-2. Mount the Mail vault.
-3. Move ~/Library/Mail to ~/Desktop for now
-4. Make a [symbolic link][simlink].
+## Using Knox to Secure Email Data on your Drive
+
+* Use [Knox](http://www.knoxformac.com/) and make a new vault called "Mail" (Don't let your login keychain to remember the password. TODO: Some images or screencasts may be necessary.) Knox is available for &euro;25.
+* Mount the Mail vault.
+* Move ~/Library/Mail to ~/Desktop for now
+* Make a [symbolic link][simlink].
 
 [symlink]: http://en.wikipedia.org/wiki/Symbolic_link "Symbolic Linnk"
 
 
 	<pre><code>ln -s /Volumes/Mail ~/Library/Mail</code></pre>
 
+## Certificate and Security
 
-5. [Get a free Thawte certificate](http://www.thawte.com/secure-email/personal-email-certificates/).
-6. Use SSL. If your mail account doesn't support SSL, don't use it. Use https:// instead of http://
-7. Use IMAP. Gmail or Mailtrust is recommended.
-8. Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. (This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
-9. Use [SpamSieve](http://c-command.com/spamsieve/) for fighting spam. Apple Mail's Junk Filter is not usable. $30.
-10. Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
-11. Force use of `https://` in Gmail.
+
+* [Get a free Thawte certificate](http://www.thawte.com/secure-email/personal-email-certificates/).
+* Use SSL. If your mail account doesn't support SSL, don't use it. Use https:// instead of http://
+* Use IMAP. Gmail or Mailtrust is recommended.
+* Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. Read [the iPhone Guide](http://manuals.info.apple.com/en/iphone_user_guide.pdf)(This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
+* Force use of `https://` in Gmail.
+
 
 ![https option](http://github.com/samuraicoder/samuraicoder-way/tree/master%2Fimages%2Fhttps.jpg?raw=true)
+
+## Spam
+
+* Use [SpamSieve](http://c-command.com/spamsieve/) for fighting spam. Apple Mail's Junk Filter is not usable. $30.
+
+## Navigate without Mouse
+
+Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
+
+
 	
 # Check gem environment
 
@@ -208,9 +230,9 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 	     - :bulk_threshold => 1000
 	  - REMOTE SOURCES:
 	     - http://gems.rubyforge.org/
-# Gem tips
+# Gem Tips
 
-# MacPorts tips
+# MacPorts Tips
 
 * <http://guide.macports.org/>
 
@@ -228,6 +250,8 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 * Use [MarcuryMover](http://www.heliumfoot.com/). $24.
 
 # TextExpander
+
+# Mailing Lists
 
 # Suggested Readings
 
@@ -252,3 +276,13 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 * Learn git-svn
 * Learn git
 * Learn how to use GitHub
+
+# What's Installed
+
+
+In order to know what you installed, run the commands:
+
+	ls /Applications
+	ls ~/Library/Widgets
+	ls ~/Library/PreferencePanes
+	ls /Library/PreferencePanes
