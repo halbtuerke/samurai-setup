@@ -1,0 +1,21 @@
+# TODO
+
+* Make a relationship file
+* Mention "How to win friends" book and a link to the wikipedia entry.
+* Add "How to work better"
+
+>1. Do one thing at a time
+2. Know the problem
+3. Learn to listen
+4. Learn to ask questions
+5. Distinguish sense from nonsense
+6. Accept change as inevitable
+7. Admit mistakes
+8. Say it simple
+9. Be calm
+10. Smile
+(via <http://lifehacker.com/5051298/ten+point-manifesto-on-how-to-work-better>)
+
+* Mention Randy Pausch's two videos.
+* Mention MailTemplate price.
+* Mention TextMate book.
