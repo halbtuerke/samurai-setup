@@ -56,6 +56,7 @@ After you've installed `mate` you can open files and folders with TextMate from 
 `mate FOLDER/`
 
 [TextMate]: http://macromates.com/ "TextMate"
+
 7. Write a `.bash_login` file.
 
 A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-and-pasting code below, hit &#x2318;-S to save the file. (The file whose name starts with `.`(dot) are invisible from Finder. Use `ls -a` to see the files.) The sample file include some code you don't need. It's just an example.
@@ -94,7 +95,7 @@ A sample `.bash_login` file. To make a file, `mate ~/.bash_login`. After copy-an
 	alias gba='git branch -a'
 
 
-7. Check `which port` if MacPorts is recognized or not. (Troubleshoot: If you get "port: command not found", [Read 2.4 of the MacPorts guide carefully.](http://guide.macports.org/#installing.shell "2.4 MacPorts and the Shell"))
+7. Check `which port` if MacPorts is recognized or not. (Troubleshoot: If you get "port: command not found", Read [2.4 of the MacPorts guide carefully.](http://guide.macports.org/#installing.shell "2.4 MacPorts and the Shell"))
 
 ## Install commands via MacPorts
 
@@ -118,8 +119,13 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 	sudo port clean -all git-core
 	sudo port clean -all ImageMagick
 
+## Install regular applications
+
 * Install applications of your choice. (e.g., Firefox, VMWare Fusion, Skype, Adium, SuperDuper, NetNewsWire, Knox, Colloquy, 1Password.)
 * Run MobileMe Sync (if you have an account.)
+
+## Install gems (including rails)
+
 * Add a GitHub as a resource for gems. `gem sources -a http://gems.github.com`
 * Install gems `sudo gem install [name_of_gem]`. (Don't install MySQL gem yet!)
 
@@ -160,7 +166,7 @@ You can install many gems at once, for example:
 	sudo gem install rails capistrano fastercsv git github mocha ruby-debug rspec rspec-rails termios sqlite3-ruby will_paginate ZenTest rcov mongrel cheat rmagick mechanize haml.
 	
 
-**Note**: Install `rmagick` after installing ImageMagick successfully.
+**Note**: To check if ImageMagic and rmagick is working properly, refer to <http://samuraicoder.net/installing_imagemagick_and_rmagick_leopard>.
 
 	
 ## Set up MySQL
@@ -185,24 +191,30 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 
 ## Using Knox to Secure Email Data on your Drive
 
-* Use [Knox](http://www.knoxformac.com/) and make a new vault called "Mail" (Don't let your login keychain to remember the password. TODO: Some images or screencasts may be necessary.) Knox is available for &euro;25.
-* Mount the Mail vault.
+TODO: Write about "Why Knox?", "Why not Filevault?"
+TODO: Some images or screencasts may be necessary.
+
+* Use [Knox](http://www.knoxformac.com/) and make a new vault called "Mail" (Don't let your login keychain to remember the password. Pick a different password than your login password.Knox is available for &euro;25.
+
+* Mount the "Mail" vault.
 * Move ~/Library/Mail to ~/Desktop for now
-* Make a [symbolic link][simlink].
+* Make a [symbolic link][symlink].
 
-[symlink]: http://en.wikipedia.org/wiki/Symbolic_link "Symbolic Linnk"
 
+[symlink]:http://en.wikipedia.org/wiki/Symbolic_link "Symbolic Link"
 
 	<pre><code>ln -s /Volumes/Mail ~/Library/Mail</code></pre>
+	
+* Then copy all the contents of your "Mail" folder on your Desktop to "Mail" vault.
 
 ## Certificate and Security
 
 
 * [Get a free Thawte certificate](http://www.thawte.com/secure-email/personal-email-certificates/).
-* Use SSL. If your mail account doesn't support SSL, don't use it. Use https:// instead of http://
-* Use IMAP. Gmail or Mailtrust is recommended.
-* Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. Read [the iPhone Guide](http://manuals.info.apple.com/en/iphone_user_guide.pdf)(This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
-* Force use of `https://` in Gmail.
+* Use SSL. If your mail account doesn't support SSL, don't use it. Use `https://` instead of `http://` if you use a browser to access email.
+* Use IMAP. Gmail or [Mailtrust](http://www.mailtrust.com/) is recommended.
+* Use Passcode Lock in iPhone. If a passcode validation error occurs ten times, all of the content inside the iPhone is autumatically deleted. Read [the iPhone Guide (a link to PDF)](http://manuals.info.apple.com/en/iphone_user_guide.pdf)(This feature is controversial. But [Apple fixed a security hole.](http://blogs.zdnet.com/security/?p=1809))
+* Force use of `https://` in Gmail. See the image below.
 
 
 ![https option](http://github.com/samuraicoder/samuraicoder-way/tree/master%2Fimages%2Fhttps.jpg?raw=true)
@@ -213,11 +225,16 @@ Whatever you do for work, you need to spend less time on email to spend more tim
 
 ## Navigate without Mouse
 
-Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> The version 2 supports "open folder". $24.95
+Use [Mail Act-On](http://www.indev.ca/MailActOn.html) for mouse-less navigation. The version 2 supports "open folder". $24.95
+
+## Don't Repeat Yourself
+
+Use [MailTemplate](http://mailtemplate.mactank.com/).
 
 
-	
-# Check gem environment
+# Gem Troubleshooting
+
+## Check gem environment
 
 	$ gem environment
 	RubyGems Environment:
@@ -239,9 +256,8 @@ Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> 
 	     - :bulk_threshold => 1000
 	  - REMOTE SOURCES:
 	     - http://gems.rubyforge.org/
-# Gem Tips
 
-# MacPorts Tips
+# MacPorts Troubleshooting
 
 * <http://guide.macports.org/>
 
@@ -253,6 +269,7 @@ Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> 
 * [TextMate official Manual in Japanese](http://manual.macromates.com/ja/)
 * Subscribe to [TextMate blog](http://blog.macromates.com/)
 * Use a TextMate mailing list or IRC for help.
+* Watch <http://video.google.com/videoplay?docid=2538831956647446078>. It's applicable to any text editor.
 
 # Moving Windows without Mouse
 
@@ -264,36 +281,12 @@ Use Mail Act-On for mouse-less navigation. <http://www.indev.ca/MailActOn.html> 
 
 # Suggested Readings
 
-
-* TODO: how to troubleshoot gem
-* TODO: how to troubleshoot port
-* TODO: how to configure TextMate (for TextMate beginners)
 * TODO: Cool enhancements for TextMate such as [RubyAmp](http://code.leadmediapartners.com/) and [ProjectPlus](http://blog.macromates.com/2008/projectplus/)
-* TODO: autotest
-* TODO: RSpec bundle
+* TODO: RSpec bundle (~/.MacOSX/environment.plist)
 * TODO: FastScripts
-* TODO: Other apps like Firefox
 * TODO: menubar apps
-* TODO: installation of "Edit in TextMate"
+* TODO: Installation of "Edit in TextMate"
 * TODO: Email part can be moved to another file.
 * TODO: A brief explanation for what ImageMagick is.
+* TODO: Firefox Setup
 
-
-# Further directions
-
-* Learn svn
-* Learn git-svn
-* Learn git
-* Learn how to use GitHub
-
-# What's Installed
-
-
-In order to know what you installed, run the commands:
-
-	ls /Applications
-	ls ~/Library/Widgets
-	ls ~/Library/PreferencePanes
-	ls /Library/PreferencePanes
-	gem list --local
-	port installed

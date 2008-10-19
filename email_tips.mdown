@@ -1,13 +1,14 @@
 # Email Tips
 
+* [Inbox Zero](http://www.43folders.com/izero). [Video](http://video.google.com/videoplay?docid=973149761529535925)
 * [Five fast email productivity tips](http://www.43folders.com/2005/02/15/five-fast-email-productivity-tips)
 * [Writing sensible email messages](http://www.43folders.com/2005/09/19/writing-sensible-email-messages)
 * [Bottom posting](http://en.wikipedia.org/wiki/Posting_style#Bottom-posting) encouraged.
-* Use plain text. No HTML mode.
+* Use plain text. No HTML mail.
 * No greetings among team members and friends who frequently exchange emails.
 * Excellent subject line.
 * The first two lines are important.
-* Use codes in [EVENT], [NEWS], [PROJECT-X], [COMPANY-NAME], [REQ], [HELP], [TALK] in a subject line. Decide them with your team members.
+* Use codes such as [EVENT], [NEWS], [PROJECT-X], [COMPANY-NAME], [REQ], [HELP], [TALK] in a subject line. Decide the codes with your team members.
 * Don't abuse [URGENT], [IMPORTANT].
 * No long signature. No Signature among team members.
 * Take time to write an email. Be specific and concise.

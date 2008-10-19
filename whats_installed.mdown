@@ -1,0 +1,11 @@
+# What's Installed
+
+
+In order to know what you installed, run the commands:
+
+	ls /Applications
+	ls ~/Library/Widgets
+	ls ~/Library/PreferencePanes
+	ls /Library/PreferencePanes
+	gem list --local
+	port installed
