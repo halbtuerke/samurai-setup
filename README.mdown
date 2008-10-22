@@ -104,6 +104,7 @@ Install ruby, git, tree and ImageMagick via MacPorts.
 	sudo port install rb-rubygems
 	sudo port install git-core +svn
 	sudo port install tree
+	sudo port install rb-fxruby # fxruby gem won't work with ruby installed with MacPorts
 	sudo port install ImageMagick
 
 
