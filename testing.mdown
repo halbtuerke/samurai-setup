@@ -42,12 +42,13 @@ I don't have the book.
 * RSpec Controllers and Tools
 * RSpec User Stories (I think the story framework was replaced recently.)
 
-* <http://www.scribd.com/doc/248443/Ruby-on-Rails-or-How-I-Learned-to-Stop-Worrying-and-Love-Web-Application-Testing>
+
 
 ## Readings
 
 * <http://blog.davidchelimsky.net/articles/2006/11/09/tutorial-rspec-stubs-and-mocks>
 * <http://www.martinfowler.com/articles/mocksArentStubs.html>
+*  <http://www.scribd.com/doc/248443/Ruby-on-Rails-or-How-I-Learned-to-Stop-Worrying-and-Love-Web-Application-Testing>
 
 ## Webistes
 
@@ -78,9 +79,9 @@ I don't have the book.
 
 # Wikipedia
 
-<http://en.wikipedia.org/wiki/Behavior_driven_development>
-<http://en.wikipedia.org/wiki/Software_testing>
-<http://en.wikipedia.org/wiki/XUnit>
-<http://en.wikipedia.org/wiki/Unit_testing>
-<http://en.wikipedia.org/wiki/Mock_object>
-<http://en.wikipedia.org/wiki/Method_stub>
+* <http://en.wikipedia.org/wiki/Behavior_driven_development>
+* <http://en.wikipedia.org/wiki/Software_testing>
+* <http://en.wikipedia.org/wiki/XUnit>
+* <http://en.wikipedia.org/wiki/Unit_testing>
+* <http://en.wikipedia.org/wiki/Mock_object>
+* <http://en.wikipedia.org/wiki/Method_stub>
