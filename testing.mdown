@@ -1,0 +1,39 @@
+# Resources on Testing
+
+## Books
+
+### Programming Ruby by Dave Thomas. 
+
+Chapter 12 "Unit Testing". The 3rd edition discusses RSpec and Shoulda as well.
+
+### The Rails Way by Obie Fernandez
+
+Chapter 17 "Testing" anc Chapter 18 "RSpec on Rails". A fair long coverage of tesing and RSpec.
+
+### Advanced Rails Recipes
+
+* Recipe 50 Describe Behavios from Outside In with RSpec
+* Recipe 51 Test First with Shoulda
+* Recipe 55 Mock Models with FlexMock
+* Recipe 56 Track Test Coverage with rcov
+
+### The Ruby Way 2nd edition by Hal Fulton
+* Chapter 16 Tesing and Debugging in 
+
+### Agile Web Development with Rails 3rd edition
+
+* Chapter 13 Testing. A short introduction on testing. Using "Depot" as an sample.
+
+### Refactoring Ruby Edition" by Jay Fields, Shane Harvie, Martin Fowler with Kent Beck
+
+* Chapter 4 "Building Tests" in " (The book is still beta.)
+
+
+## Online
+
+### PeepCode
+
+* Test-first Development for Rails (The content is rather old)
+* RSpec Mocks and Models
+* RSpec Controllers and Tools
+* RSpec User Stories (I think the story framework was replaced recently.)
