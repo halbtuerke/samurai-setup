@@ -1,5 +1,6 @@
 # TODO
 
+* Add how to update rubyges to 1.3 <http://rails.wincent.com/wiki/Updating_to_RubyGems_1.3.0_on_Mac_OS_X_Leopard_10.5.4>
 * Make a relationship file
 * Mention "How to win friends" book and a link to the wikipedia entry.
 * Add "How to work better"
