@@ -147,6 +147,13 @@ Here is a list of gems I use regularly.
 * rmagick
 * mechanize
 * haml
+* autotest
+* redgreen
+* roodi
+* flog
+* reek
+* flay
+* heckle
 
 You can install many gems at once, for example:
 
@@ -167,7 +174,9 @@ You can install many gems at once, for example:
 
   <pre><code>sudo gem install mysql -- --with-mysql-config=/opt/local/lib/mysql5/bin/mysql_config</code></pre>
 	
+## Install autotest
 
+TODO
 
 
 # Secure Email
