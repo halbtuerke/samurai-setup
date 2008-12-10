@@ -1,0 +1,48 @@
+TODO: What's the best word to use: parse, read or import?
+
+Trying to cover different formats and their parsers and exporter in Ruby
+
+# Formats
+
+CSV, XML, YAML, PDF, JSON, JSONP, EXCEL, FOAF, HTML, XHTML, Microformats, RSS, ATOM
+
+## Importing and exporting
+
+## CSV
+
+Ruby 1.9 uses fastercsv by default.
+
+## XML
+
+## Others
+
+## Exporting PDF
+
+* PDF::Writer
+* prawn
+
+parseexcel
+
+http://xml-simple.rubyforge.org/
+
+http://code.whytheluckystiff.net/hpricot/
+
+http://mofo.rubyforge.org/
+
+http://nokogiri.rubyforge.org/nokogiri/
+
+http://treetop.rubyforge.org/
+
+http://www.rubyrss.com/
+
+http://www.cozmixng.org/~rwiki/?cmd=view;name=RSS+Parser%3A%3ATutorial.en
+
+http://rubyforge.org/snippet/detail.php?type=snippet&id=29
+
+http://code.dunae.ca/css_parser/
+
+http://code.google.com/p/ruby-css-parser/
+
+http://raa.ruby-lang.org/project/html-parser
+
+http://prawn.majesticseacreature.com/

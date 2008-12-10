@@ -25,3 +25,9 @@
 * Mention `port version`
 * Mention `port help`
 * Mention `http://docs.rubygems.org/`
+
+Recommended Codecs 
+	Perian (.flv,avi,divx and much more) - http://perian.org/
+	A52Codec (ac3)- http://trac.cod3r.com/a52codec/
+	Xiph Components (ogg)- http://xiph.org/quicktime/
+	Flip4Mac (wmv) - http://www.microsoft.com/windows/windowsmedia/player/wmcomponents.mspx
